@@ -1,0 +1,17 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "predeploy": "yarn build",
+    "deploy": "syncdir dist $HOME/Library/Application\\ Support/Übersicht/widgets",
+    "deploy:watch": "syncdir --watch dist $HOME/Library/Application\\ Support/Übersicht/widgets"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@types/react": "^17.0.11",
+    "@types/superagent": "^4.1.11",
+    "sync-directory": "^2.2.22"
+  }
+}
